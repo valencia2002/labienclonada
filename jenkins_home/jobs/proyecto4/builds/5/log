@@ -1,0 +1,47 @@
+Started by user [8mha:////4Hn4lRqHDU0OcfNxqEO+/12d4JJCXUMqiXmwXZocgB/cAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL9xJTczDwA4LbuW8AAAAA=[0mJenkis admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/proyecto4
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/proyecto4/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ApasoftTraining/jenkins-python-freestyle # timeout=10
+Fetching upstream changes from https://github.com/ApasoftTraining/jenkins-python-freestyle
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.3'
+ > git fetch --tags --force --progress -- https://github.com/ApasoftTraining/jenkins-python-freestyle +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision 8e15a2ab79f6101641f442835e7bd3a30c03e970 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8e15a2ab79f6101641f442835e7bd3a30c03e970 # timeout=10
+Commit message: "Merge branch 'main' of https://github.com/ApasoftTraining/jenkins-python-freestyle into main"
+ > git rev-list --no-walk 8e15a2ab79f6101641f442835e7bd3a30c03e970 # timeout=10
+[proyecto4] $ /bin/sh -xe /tmp/jenkins1461799348813774342.sh
++ pip install -r requirements.txt --break-system-packages
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pandas (from -r requirements.txt (line 1))
+  Downloading pandas-3.0.3-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl.metadata (79 kB)
+Collecting numpy>=1.26.0 (from pandas->-r requirements.txt (line 1))
+  Downloading numpy-2.4.4-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (6.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 1))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 1))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading pandas-3.0.3-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl (10.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 30.1 MB/s eta 0:00:00
+Downloading numpy-2.4.4-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (15.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 39.3 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, numpy, python-dateutil, pandas
+  WARNING: The scripts f2py and numpy-config are installed in '/var/jenkins_home/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
+Successfully installed numpy-2.4.4 pandas-3.0.3 python-dateutil-2.9.0.post0 six-1.17.0
+[proyecto4] $ /bin/sh -xe /tmp/jenkins8144674924653506878.sh
++ python -m unittest discover test
+/tmp/jenkins8144674924653506878.sh: 2: python: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

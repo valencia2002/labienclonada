@@ -1,0 +1,25 @@
+Started by user [8mha:////4Hn4lRqHDU0OcfNxqEO+/12d4JJCXUMqiXmwXZocgB/cAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL9xJTczDwA4LbuW8AAAAA=[0mJenkis admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/proyecp4
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/proyecp4/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ApasoftTraining/jenkins # timeout=10
+Fetching upstream changes from https://github.com/ApasoftTraining/jenkins
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.3'
+ > git fetch --tags --force --progress -- https://github.com/ApasoftTraining/jenkins +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision fd25c6b006c6a806f5deb1ee736d95cae040584a (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fd25c6b006c6a806f5deb1ee736d95cae040584a # timeout=10
+Commit message: "Update README.md"
+ > git rev-list --no-walk fd25c6b006c6a806f5deb1ee736d95cae040584a # timeout=10
+[proyecp4] $ /bin/sh -xe /tmp/jenkins10896712064830683318.sh
++ javac Example.java
++ java Example
+This is an example of a java program
+Finished: SUCCESS

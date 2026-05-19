@@ -1,0 +1,28 @@
+Started by user [8mha:////4Hn4lRqHDU0OcfNxqEO+/12d4JJCXUMqiXmwXZocgB/cAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL9xJTczDwA4LbuW8AAAAA=[0mJenkis admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/proyecto5
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ApasoftTraining/docker-jenkins-web
+ > git init /var/jenkins_home/workspace/proyecto5 # timeout=10
+Fetching upstream changes from https://github.com/ApasoftTraining/docker-jenkins-web
+ > git --version # timeout=10
+ > git --version # 'git version 2.47.3'
+ > git fetch --tags --force --progress -- https://github.com/ApasoftTraining/docker-jenkins-web +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ApasoftTraining/docker-jenkins-web # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Seen branch in repository origin/main
+Seen 1 remote branch
+ > git show-ref --tags -d # timeout=10
+Checking out Revision c7495ed00f2e3baf3a17a2a7203745956413551c (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c7495ed00f2e3baf3a17a2a7203745956413551c # timeout=10
+Commit message: "first commit"
+First time build. Skipping changelog.
+[proyecto5] $ /bin/sh -xe /tmp/jenkins15597696694255907870.sh
++ docker build -t web .
+/tmp/jenkins15597696694255907870.sh: 2: docker: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
